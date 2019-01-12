@@ -1,0 +1,205 @@
+// intro section begun
+
+.intro
+	display: flex
+	align-items: center
+	background-position: top center
+	background-size: cover
+	background-repeat: no-repeat
+	background-color: rgba(209, 46, 46, .8)
+	background-blend-mode: hard-light
+	height: 100vh
+	width: 100%
+	position: relative
+	&__wrap
+		text-align: center
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		bottom: 55%
+		z-index: 1
+		background: -moz-linear-gradient(89deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%) /* ff3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(255,255,255,0))) /* safari4+,chrome */
+		background: -webkit-linear-gradient(89deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%) /* safari5.1+,chrome10+ */
+		background: -o-linear-gradient(89deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%) /* opera 11.10+ */
+		background: -ms-linear-gradient(89deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%) /* ie10+ */
+		background: linear-gradient(1deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%) /* w3c */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=0 ) /* ie6-9 */
+	&__title
+		padding: 20px
+		font-size: 36px
+		font-family: "Myriad Pro", sans-serif
+		color: rgb(255, 255, 255)
+		text-transform: uppercase
+		text-align: center
+		letter-spacing: 7px
+		position: relative
+		overflow: hidden
+		z-index: 3
+
+		+r(1100)
+			font-size: 26px
+
+		+r(440)
+			font-size: 24px
+			letter-spacing: 5px
+
+	.btn
+		display: inline-block
+		margin-top: 30px
+		padding: 20px 80px 20px 50px
+		background-color: #D12E2E
+		color: #fff
+		-webkit-border-radius: 3px
+		-moz-border-radius: 3px
+		border-radius: 3px
+		position: relative
+		&__text
+			font-size: 12px
+			font-family: "Myriad Pro", sans-serif
+			position: relative
+			letter-spacing: 5px
+			font-weight: 700
+			z-index: 2
+			transition: .3s ease
+
+			+r(440)
+				letter-spacing: 3px
+
+		+r(440)
+			padding: 15px 60px 15px 29px
+
+		&__arrow
+			display: flex
+			align-items: center
+			margin: 0 5px
+			position: absolute
+			right: 25px
+			top: 50%
+			transform: translateY(-50%)
+			z-index: 2
+			.icon-arr-right
+				width: 40px
+				height: 20px
+				fill: #fff
+				transition: .3s ease
+
+			+r(440)
+				right: 10px
+
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 0
+			height: 100%
+			-webkit-border-radius: 3px
+			-moz-border-radius: 3px
+			border-radius: 3px
+			background-color: #fff
+			transition: .3s ease
+			z-index: 1
+		&:hover
+			.btn__text
+				color: #D12E2E
+			.btn__arrow .icon-arr-right
+				fill: #D12E2E
+				transform: translateX(10px)
+			&:after
+				width: 100%
+				color: #D12E2E
+
+// intro section end
+
+// catalog section begun
+
+.catalog
+	background-color: #fdfefe
+	padding: 70px 0 50px
+
+	+r(980)
+		padding-top: 50px
+
+	+r(510)
+		padding-top: 30px
+
+	&__wrap
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		width: 100%
+
+		+r(740)
+			justify-content: space-around
+
+	&__item
+		flex: 0 30%
+		display: flex
+		flex-direction: column
+		align-items: center
+		max-width: 310px
+		height: 100%
+		font-size: 14px
+		font-family: "GothamPro", sans-serif
+		color: rgb(24, 26, 30)
+		line-height: 1.84
+		text-align: center
+
+		+r(980)
+			max-width: 230px
+			font-size: 13px
+
+		+r(740)
+			margin-bottom: 50px
+
+		&__slider
+			width: 100%
+			padding-bottom: 30px
+		&__title
+			text-transform: uppercase
+		&__price
+			color: #D12E2E
+		.slick-dots
+			display: flex
+			align-items: center
+			justify-content: center
+			bottom: 10px
+			li
+				margin: 0 4px
+		.slick-dots li.slick-active button:before
+			background: #d12e2e
+			width: 8px
+			height: 8px
+		.slick-dots li button:before
+			background: rgba(205, 66, 69, 0.8)
+			width: 6px
+			height: 6px
+		&__more
+			display: inline-block
+			margin-top: 20px
+			padding: 0 5px 5px
+			font-size: 12px
+			font-family: "Myriad Pro", sans-serif
+			color: #1B1E24
+			font-weight: 700
+			transition: .3s linear
+	&__all
+		text-align: center
+		.btn
+			display: inline-block
+			padding: 5px
+			margin-top: 70px
+			font-size: 14px
+			font-family: "Myriad Pro", sans-serif
+			color: #1B1E24
+			font-weight: 700
+			&:hover
+				color: #d12e2e
+
+			+r(740)
+				margin-top: 30px
+

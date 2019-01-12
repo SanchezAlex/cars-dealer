@@ -1,0 +1,33 @@
+//BEGIN header
+header.header.js-headerMain
+  div.container
+    div.header__wrap
+      nav.menu
+        button.menu__btn.js-navBtn
+          span.menu__btn__line
+          span.menu__btn__line.menu__btn__line--small
+          span.menu__btn__line
+          span.menu__btn__line.menu__btn__line--small
+        div.menu__main.js-navMenu(style='background-image: url(img/menu-banner.jpg)')
+          a.logo__menu(href='/')
+            img.logo__menu__img(src='img/logo.png' alt='logo')
+          ul.menu__list
+            li.menu__item
+              a.menu__link(href='#intro') Главная
+            li.menu__item
+              a.menu__link(href='#catalog') Каталог
+            li.menu__item
+              a.menu__link(href='#news') Новости
+            li.menu__item
+              a.menu__link(href='#about') О нас
+            li.menu__item
+              a.menu__link(href='#contacts') Контакты
+          button.menu__close.js-navCloseBtn
+            span.menu__close__line
+      div.logo
+        a.logo__main(href='/')
+          img.logo__image(src='img/logo.png' alt='logo')
+      div.contact
+        a.contact__phone(href='tel:+380930000000') 093-000-00-00
+        a.contact__email(href='mailto:info@gmail.com') info@gmail.com
+//END header

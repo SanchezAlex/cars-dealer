@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fyutura test task</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="preloader"></div>
+    <script>
+      document.body.setAttribute("class", "noscroll");
+      document.getElementById("overlay").style.display = "block";
+      document.getElementById("preloader").style.display = "block";
+
+    </script>
+    <!--BEGIN out-->
+    <div class="out">
+      <!--BEGIN header-->
+      <header class="header js-headerMain">
+        <div class="container">
+          <div class="header__wrap">
+            <nav class="menu"><button class="menu__btn js-navBtn"><span class="menu__btn__line"></span><span class="menu__btn__line menu__btn__line--small"></span><span class="menu__btn__line"></span><span class="menu__btn__line menu__btn__line--small"></span></button>
+              <div class="menu__main js-navMenu" style="background-image: url(img/menu-banner.jpg)"><a class="logo__menu" href="/"><img class="logo__menu__img" src="img/logo.png" alt="logo"></a>
+                <ul class="menu__list">
+                  <li class="menu__item"><a class="menu__link" href="#intro">Главная</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#catalog">Каталог</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#news">Новости</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#contacts">Контакты</a></li>
+                </ul><button class="menu__close js-navCloseBtn"><span class="menu__close__line"></span></button>
+              </div>
+            </nav>
+            <div class="logo"><a class="logo__main" href="/"><img class="logo__image" src="img/logo.png" alt="logo"></a></div>
+            <div class="contact"><a class="contact__phone" href="tel:+380930000000">093-000-00-00</a><a class="contact__email" href="mailto:info@gmail.com">info@gmail.com</a></div>
+          </div>
+        </div>
+      </header>
+      <!--END header-->
+      <section class="intro" style="background-image: url(img/intro-banner.jpg)">
+        <div class="container">
+          <div class="intro__wrap">
+            <h1 class="intro__title">Продажа, покупка и обмен премиум автомобилей с пробегом и без в Одессе</h1><a class="btn js-modalBtn" href="#show-catalog" data-modal="catalog-modal"><span class="btn__text">смотреть каталог</span><span class="btn__arrow"><svg class="icon icon-arr-right ">
+                  <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                </svg></span></a>
+          </div>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog__wrap">
+            <article class="catalog__item">
+              <div class="catalog__item__slider"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"></div>
+              <h3 class="catalog__item__title">Maserati GranCabrio 4.7 AT</h3>
+              <div class="catalog__item__desc"><span>2008, 18 тыс.км, Бензин, 3.8 л,</span><br><span>Автоматическая</span></div>
+              <div class="catalog__item__price"><span>109 900 $</span></div><a class="catalog__item__more btn btn--line" href="#">подробнее</a>
+            </article>
+            <article class="catalog__item">
+              <div class="catalog__item__slider"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"></div>
+              <h3 class="catalog__item__title">Maserati GranCabrio 4.7 AT</h3>
+              <div class="catalog__item__desc"><span>2008, 18 тыс.км, Бензин, 3.8 л,</span><br><span>Автоматическая</span></div>
+              <div class="catalog__item__price"><span>109 900 $</span></div><a class="catalog__item__more btn btn--line" href="#">подробнее</a>
+            </article>
+            <article class="catalog__item">
+              <div class="catalog__item__slider"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"></div>
+              <h3 class="catalog__item__title">Maserati GranCabrio 4.7 AT</h3>
+              <div class="catalog__item__desc"><span>2008, 18 тыс.км, Бензин, 3.8 л,</span><br><span>Автоматическая</span></div>
+              <div class="catalog__item__price"><span>109 900 $</span></div><a class="catalog__item__more btn btn--line" href="#">подробнее</a>
+            </article>
+          </div>
+          <div class="catalog__all"><a class="btn btn--line" href="#">смотреть все авто</a></div>
+        </div>
+      </section>
+      <div class="modal js-modal" id="catalog-modal">
+        <div class="modal__content">
+          <div class="modal__close js-modalCloseBtn"></div>
+          <div class="container">
+            <div class="catalog__wrap">
+              <article class="catalog__item">
+                <div class="catalog__item__slider"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"></div>
+                <h3 class="catalog__item__title">Maserati GranCabrio 4.7 AT</h3>
+                <div class="catalog__item__desc"><span>2008, 18 тыс.км, Бензин, 3.8 л,</span><br><span>Автоматическая</span></div>
+                <div class="catalog__item__price"><span>109 900 $</span></div><a class="catalog__item__more btn btn--line" href="#">подробнее</a>
+              </article>
+              <article class="catalog__item">
+                <div class="catalog__item__slider"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"></div>
+                <h3 class="catalog__item__title">Maserati GranCabrio 4.7 AT</h3>
+                <div class="catalog__item__desc"><span>2008, 18 тыс.км, Бензин, 3.8 л,</span><br><span>Автоматическая</span></div>
+                <div class="catalog__item__price"><span>109 900 $</span></div><a class="catalog__item__more btn btn--line" href="#">подробнее</a>
+              </article>
+              <article class="catalog__item">
+                <div class="catalog__item__slider"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"><img src="img/slide-car.png" alt="slide image"></div>
+                <h3 class="catalog__item__title">Maserati GranCabrio 4.7 AT</h3>
+                <div class="catalog__item__desc"><span>2008, 18 тыс.км, Бензин, 3.8 л,</span><br><span>Автоматическая</span></div>
+                <div class="catalog__item__price"><span>109 900 $</span></div><a class="catalog__item__more btn btn--line" href="#">подробнее</a>
+              </article>
+            </div>
+          </div>
+          <div class="catalog__all"><a class="btn btn--line" href="#">смотреть все авто</a></div>
+        </div>
+      </div>
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

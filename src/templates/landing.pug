@@ -1,0 +1,71 @@
+---
+title: Fyutura test task
+---
+extends layouts/_layout
+block content
+    section.intro(style='background-image: url(img/intro-banner.jpg)')
+        div.container
+            div.intro__wrap
+                h1.intro__title Продажа, покупка и обмен премиум автомобилей с пробегом и без в Одессе
+                a.btn.js-modalBtn(href='#show-catalog' data-modal='catalog-modal')
+                    span.btn__text смотреть каталог
+                    span.btn__arrow
+                        +icon('arr-right')
+    section.catalog
+        div.container
+            div.catalog__wrap
+                article.catalog__item
+                    div.catalog__item__slider
+                        img(src='img/slide-car.png' alt='slide image')
+                        img(src='img/slide-car.png' alt='slide image')
+                        img(src='img/slide-car.png' alt='slide image')
+                        img(src='img/slide-car.png' alt='slide image')
+                        img(src='img/slide-car.png' alt='slide image')
+                    h3.catalog__item__title Maserati GranCabrio 4.7 AT
+                    div.catalog__item__desc
+                        span 2008, 18 тыс.км, Бензин, 3.8 л,
+                        |
+                        br
+                        |
+                        span Автоматическая
+                    div.catalog__item__price
+                        span 109 900 $
+                    a.catalog__item__more.btn.btn--line(href='#') подробнее
+                article.catalog__item
+                    div.catalog__item__slider
+                        img(src='img/slide-car.png' alt='slide image')
+                        img(src='img/slide-car.png' alt='slide image')
+                        img(src='img/slide-car.png' alt='slide image')
+                        img(src='img/slide-car.png' alt='slide image')
+                        img(src='img/slide-car.png' alt='slide image')
+                    h3.catalog__item__title Maserati GranCabrio 4.7 AT
+                    div.catalog__item__desc
+                        span 2008, 18 тыс.км, Бензин, 3.8 л,
+                        |
+                        br
+                        |
+                        span Автоматическая
+                    div.catalog__item__price
+                        span 109 900 $
+                    a.catalog__item__more.btn.btn--line(href='#') подробнее
+                article.catalog__item
+                    div.catalog__item__slider
+                        img(src='img/slide-car.png' alt='slide image')
+                        img(src='img/slide-car.png' alt='slide image')
+                        img(src='img/slide-car.png' alt='slide image')
+                        img(src='img/slide-car.png' alt='slide image')
+                        img(src='img/slide-car.png' alt='slide image')
+                    h3.catalog__item__title Maserati GranCabrio 4.7 AT
+                    div.catalog__item__desc
+                        span 2008, 18 тыс.км, Бензин, 3.8 л,
+                        |
+                        br
+                        |
+                        span Автоматическая
+                    div.catalog__item__price
+                        span 109 900 $
+                    a.catalog__item__more.btn.btn--line(href='#') подробнее
+            div.catalog__all
+                a.btn.btn--line(href='#') смотреть все авто
+
+    include partials/_modal

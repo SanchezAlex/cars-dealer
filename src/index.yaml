@@ -1,0 +1,5 @@
+ProjectTitle: Fyutura test task
+
+PageList:
+- file: landing.html
+  ready: 100

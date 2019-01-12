@@ -1,0 +1,195 @@
+.header
+  position: fixed
+  left: 0
+  right: 0
+  z-index: 10
+  transition: .25s linear
+  &.is-scroll
+    background-color: #1b1e24
+    .logo
+      &__main
+        max-width: 120px
+
+        +r(980)
+          max-width: 85px
+
+      &__image
+        transform: scale(.9)
+
+        +r(980)
+          transform: scale(1)
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    line-height: 0
+    padding: 7px 0
+  .menu
+    flex: 0 33.3%
+    &__btn
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 34px
+      height: 30px
+      &__line
+        display: block
+        width: 30px
+        background-color: #fff
+        height: 2px
+        margin: 2px
+        -webkit-border-radius: 5px
+        -moz-border-radius: 5px
+        border-radius: 5px
+        transition: .2s ease
+        position: relative
+        &--small
+          width: 60%
+        &::after
+          content: ''
+          position: absolute
+          left: 0
+          top: 0
+          right: 0
+          bottom: 0
+          width: 0
+          background-color: #D12E2E
+          transition: .2s ease
+      &:hover
+        .menu__btn__line::after
+          width: 100%
+        .menu__btn__line--small
+          width: 30px
+    &__main
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100vh
+      margin-left: -100%
+      padding-top: 10px
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center
+      background-blend-mode: saturation
+      background-color: rgba(209,46,46,.8)
+      z-index: 10
+      transition: .3s ease
+      text-align: center
+      &.is-active
+        display: block
+        margin: 0
+    &__list
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 30px
+    &__item
+      margin: 10px 0
+    &__link
+      font-size: 30px
+      color: #fff
+      line-height: 40px
+      text-transform: uppercase
+      font-weight: 700
+      font-family: "Myriad Pro", sans-serif
+      letter-spacing: 5px
+      transition: .3s linear
+
+      +r(980)
+        font-size: 25px
+
+      &:hover
+        color: #D12E2E
+    &__close
+      display: flex
+      flex-direction: column
+      justify-content: center
+      width: 35px
+      height: 35px
+      position: absolute
+      top: 20px
+      right: 30px
+      background: none
+
+      +r(1190)
+        top: 10px
+        right: 10px
+
+      &__line
+        display: inline-block
+        height: 3px
+        width: 35px
+        -webkit-border-radius: 5px
+        -moz-border-radius: 5px
+        border-radius: 5px
+        transform: rotate(45deg)
+        background-color: #fff
+        position: relative
+        transition: .3s ease
+        &::before
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          display: inline-block
+          height: 3px
+          width: 35px
+          -webkit-border-radius: 5px
+          -moz-border-radius: 5px
+          border-radius: 5px
+          transform: rotate(90deg)
+          background-color: #fff
+          transition: .3s ease
+      &:hover
+        .menu__close__line,
+        .menu__close__line::before
+          background-color: #D12E2E
+  .logo
+    flex: 0 33.3%
+    text-align: center
+    &__image
+      width: 100%
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s
+    &__main
+      display: inline-block
+      max-width: 140px
+      width: 100%
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s
+    &__menu
+      display: inline-block
+      max-width: 140px
+      &__img
+        width: 100%
+  .contact
+    flex: 0 33.3%
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    &__phone
+      font-size: 14px
+      font-family: "Myriad Pro", sans-serif
+      color: rgb(255, 255, 255)
+      line-height: 18px
+      margin-bottom: 5px
+      transition: .3s ease
+      letter-spacing: 1px
+
+      +r(440)
+        letter-spacing: 0
+
+      &:hover
+        color: #D12E2E
+    &__email
+      font-size: 9px
+      font-family: "GothamPro", sans-serif
+      color: rgba(255, 255, 255, 0.7)
+      text-transform: uppercase
+      line-height: 10px
+      transition: .3s ease
+      &:hover
+        color: #D12E2E
+
+
+
