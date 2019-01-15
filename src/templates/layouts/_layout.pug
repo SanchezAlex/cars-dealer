@@ -4,13 +4,9 @@ html
   head
     include _head
 
-  body(class=bodyClass)
-    div#overlay
-    div#preloader
-    script.
-       document.body..classList.add("no-scroll");
-       document.getElementById("overlay").style.display = "block";
-       document.getElementById("preloader").style.display = "block";
+  body.no-scroll(class=bodyClass)
+    div.preloader
+      div.preloader__gif
     //BEGIN out
     .out(class=outClass)
       block header

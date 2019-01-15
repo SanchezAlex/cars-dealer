@@ -11,8 +11,7 @@ class App {
         // hide preloader
 
         setTimeout(function () {
-            document.getElementById("preloader").style.display = "none";
-            document.getElementById("overlay").style.display = "none";
+            document.querySelector('.preloader').style.display = "none";
 
             document.body.classList.remove('no-scroll');
         }, 1000);
